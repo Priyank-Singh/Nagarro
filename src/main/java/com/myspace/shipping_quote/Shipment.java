@@ -67,4 +67,15 @@ public class Shipment implements java.io.Serializable {
 		this.usesCustoms = usesCustoms;
 	}
 
+	@Override
+	public String toString() {
+		return "{" +
+		" id='" + getId() + "'" + 
+		", from='" + getFrom() + "'" +  
+		", to='" + getTo() + "'" +  
+		", distance='" + getDistance() + "'" +
+		", usesCustoms='" + getUsesCustoms() + "'" + 
+		"}";
+	}
+
 }
