@@ -13,6 +13,7 @@ public class Shipment implements java.io.Serializable {
 	private java.lang.Integer id;
 	private java.lang.String to;
 	private java.lang.Boolean usesCustoms;
+	private java.lang.String address;
 
 	private java.lang.String address;
 
@@ -34,7 +35,13 @@ public class Shipment implements java.io.Serializable {
 	public void setFrom(java.lang.String from) {
 		this.from = from;
 	}
+	public java.lang.String getAddress() {
+		return this.address;
+	}
 
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
 	public java.lang.Integer getId() {
 		return this.id;
 	}
