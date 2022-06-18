@@ -13,8 +13,6 @@ public class Shipment implements java.io.Serializable {
 	private java.lang.Integer id;
 	private java.lang.String to;
 	private java.lang.Boolean usesCustoms;
-	private java.lang.String address;
-
 	public Shipment() {
 	}
 
@@ -32,13 +30,6 @@ public class Shipment implements java.io.Serializable {
 
 	public void setFrom(java.lang.String from) {
 		this.from = from;
-	}
-	public java.lang.String getAddress() {
-		return this.address;
-	}
-
-	public void setAddress(java.lang.String address) {
-		this.address = address;
 	}
 	public java.lang.Integer getId() {
 		return this.id;
@@ -73,13 +64,12 @@ public class Shipment implements java.io.Serializable {
 
 	public Shipment(java.lang.Integer distance, java.lang.String from,
 			java.lang.Integer id, java.lang.String to,
-			java.lang.Boolean usesCustoms, java.lang.String address) {
+			java.lang.Boolean usesCustoms) {
 		this.distance = distance;
 		this.from = from;
 		this.id = id;
 		this.to = to;
 		this.usesCustoms = usesCustoms;
-		this.address = address;
 	}
 
 }
