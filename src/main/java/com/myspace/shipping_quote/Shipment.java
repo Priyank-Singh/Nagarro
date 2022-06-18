@@ -71,14 +71,6 @@ public class Shipment implements java.io.Serializable {
 				+ "'" + ", usesCustoms='" + getUsesCustoms() + "'" + "}";
 	}
 
-	public java.lang.String getAddress() {
-		return this.address;
-	}
-
-	public void setAddress(java.lang.String address) {
-		this.address = address;
-	}
-
 	public Shipment(java.lang.Integer distance, java.lang.String from,
 			java.lang.Integer id, java.lang.String to,
 			java.lang.Boolean usesCustoms, java.lang.String address) {
