@@ -10,7 +10,6 @@ public class Customer implements java.io.Serializable {
 
 	private java.lang.String name;
 	private java.lang.Integer id;
-
 	public Customer() {
 	}
 
