@@ -15,8 +15,6 @@ public class Shipment implements java.io.Serializable {
 	private java.lang.Boolean usesCustoms;
 	private java.lang.String address;
 
-	private java.lang.String address;
-
 	public Shipment() {
 	}
 
