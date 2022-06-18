@@ -14,6 +14,8 @@ public class Shipment implements java.io.Serializable {
 	private java.lang.String to;
 	private java.lang.Boolean usesCustoms;
 
+	private java.lang.String address;
+
 	public Shipment() {
 	}
 
@@ -57,25 +59,30 @@ public class Shipment implements java.io.Serializable {
 		this.usesCustoms = usesCustoms;
 	}
 
+	@Override
+	public String toString() {
+		return "{" + " id='" + getId() + "'" + ", from='" + getFrom() + "'"
+				+ ", to='" + getTo() + "'" + ", distance='" + getDistance()
+				+ "'" + ", usesCustoms='" + getUsesCustoms() + "'" + "}";
+	}
+
+	public java.lang.String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
 	public Shipment(java.lang.Integer distance, java.lang.String from,
 			java.lang.Integer id, java.lang.String to,
-			java.lang.Boolean usesCustoms) {
+			java.lang.Boolean usesCustoms, java.lang.String address) {
 		this.distance = distance;
 		this.from = from;
 		this.id = id;
 		this.to = to;
 		this.usesCustoms = usesCustoms;
-	}
-
-	@Override
-	public String toString() {
-		return "{" +
-		" id='" + getId() + "'" + 
-		", from='" + getFrom() + "'" +  
-		", to='" + getTo() + "'" +  
-		", distance='" + getDistance() + "'" +
-		", usesCustoms='" + getUsesCustoms() + "'" + 
-		"}";
+		this.address = address;
 	}
 
 }
