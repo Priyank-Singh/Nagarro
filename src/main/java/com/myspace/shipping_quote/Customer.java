@@ -28,7 +28,6 @@ public class Customer implements java.io.Serializable {
 	public void setId(java.lang.Integer id) {
 		this.id = id;
 	}
-
 	public Customer(java.lang.String name, java.lang.Integer id) {
 		this.name = name;
 		this.id = id;
