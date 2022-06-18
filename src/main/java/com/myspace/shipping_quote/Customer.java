@@ -11,6 +11,7 @@ public class Customer implements java.io.Serializable {
 	private java.lang.String name;
 	private java.lang.Integer id;
 	private java.lang.String address;
+	private java.lang.String designation;
 	public Customer() {
 	}
 
@@ -36,11 +37,20 @@ public class Customer implements java.io.Serializable {
 		this.address = address;
 	}
 
+	public java.lang.String getDesignation() {
+		return this.designation;
+	}
+
+	public void setDesignation(java.lang.String designation) {
+		this.designation = designation;
+	}
+
 	public Customer(java.lang.String name, java.lang.Integer id,
-			java.lang.String address) {
+			java.lang.String address, java.lang.String designation) {
 		this.name = name;
 		this.id = id;
 		this.address = address;
+		this.designation = designation;
 	}
 
 }
