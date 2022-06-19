@@ -10,6 +10,7 @@ public class Customer implements java.io.Serializable {
 
 	private java.lang.String name;
 	private java.lang.Integer id;
+	private java.lang.String address;
 	public Customer() {
 	}
 
@@ -27,9 +28,19 @@ public class Customer implements java.io.Serializable {
 	public void setId(java.lang.Integer id) {
 		this.id = id;
 	}
-	public Customer(java.lang.String name, java.lang.Integer id) {
+	public java.lang.String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
+	public Customer(java.lang.String name, java.lang.Integer id,
+			java.lang.String address) {
 		this.name = name;
 		this.id = id;
+		this.address = address;
 	}
 
 }
